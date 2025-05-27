@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bảng Giá Bán Key</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .pricing-box {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 24px 32px;
+      width: 320px;
+      text-align: center;
+    }
+
+    .pricing-title {
+      font-style: italic;
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .pricing-grid {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+    }
+
+    .column {
+      width: 48%;
+      text-align: left;
+    }
+
+    .item {
+      margin-bottom: 12px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      color: white;
+    }
+
+    /* Màu từng mốc ngày và giá */
+    .day-7 { background-color: #4CAF50; }
+    .day-14 { background-color: #2196F3; }
+    .day-30 { background-color: #9C27B0; }
+
+    .price-7 { background-color: #66BB6A; }
+    .price-14 { background-color: #42A5F5; }
+    .price-30 { background-color: #BA68C8; }
+  </style>
+</head>
+<body>
+  <div class="pricing-box">
+    <div class="pricing-title"><i>Bảng Giá Bán Key</i></div>
+    <div class="pricing-grid">
+      <div class="column">
+        <div class="item day-7">7 Ngày</div>
+        <div class="item day-14">14 Ngày</div>
+        <div class="item day-30">30 Ngày</div>
+      </div>
+      <div class="column">
+        <div class="item price-7">5k</div>
+        <div class="item price-14">10k</div>
+        <div class="item price-30">20k</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
